@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(180, 207, 207);
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 600;
+}
+
+.banner {
+    width: 100%;
+    height: 40%;
+    background-image: url(https://images.unsplash.com/photo-1495822892661-2ead864e1c7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.795);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+
+}
+
+.banner h1 Span {
+    font-size: 15px;
+}
+
+.banner p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.795);
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6e6331d7;
+    color: #d3caca;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.destinations {
+    padding: 50px;
+    background-color: #5ea3a349;
+
+}
+
+.destinations h2 {
+    font-size: 24px;
+    margin-bottom: 29px;
+    /* margin-left: 480px; */
+
+}
+
+.destination {
+    display: inline-block;
+    width: 280px;
+    margin-right: 28.9px;
+}
+.destination a{
+    text-decoration: none;
+    color: black;
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    box-shadow: 3px 1px 10px;   
+}
+
+.destination p {
+    font-size: 12px;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+}
+
+.sec{
+    width: 40vw;
+    height: 10vh;
+    /* background-color: aqua; */
+    position: absolute;
+    right: 1px;
+    top: 530px; 
+    display: flex;
+}
+.sec i{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 35px;
+    font-size: 35px;
+
+}
+header i{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+header span i{
+    position: absolute;
+    right: 150px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.ri-customer-service-line{
+    position: absolute;
+    right: 90px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.last{
+    width: 100%;
+    height:100%;
+    display: flex;
+    /* background-color: aqua; */
+    position: absolute;
+    background-image: url(https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.faq {
+    padding: 1px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 90%;
+    padding: 6px;
+
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding:10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #6e6a6a4f;
+    margin-bottom: -3px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.10s;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .contect {
+    background: #6bcbd859;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    color: black;
+    transition: max-height 0.5s, padding 0.5s;
+    border-radius: 10px
+
+}
+
+.accordion input[type='radio']:checked+label+.contect {
+    max-height: 1400px;
+    padding: 30px 20px;
+}
+
+.accordion input[type='radio']:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small {
+    font-size: 13px;
+}
+
+.end{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+    position:absolute;
+    bottom: 1px;
+    display: flex;
+    padding: 10px;
+    
+}
+
+.one{
+    width:15%;
+    height: 100%;
+    /* background-color: #8b5c5c; */
+}
+.one h1{
+    font-size: 19px;
+    
+}
+.one li{
+    list-style: none;
+    font-size: 12px;
+    color: #000000de;
+    font-weight: 600;
+  
+}
+.one hr{
+    /* color: black; */
+    height: 1px;
+    width: 665%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+    
+.one li i{
+    font-size: 18px;
+    letter-spacing: 20px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+
+}
+.one  a {
+    text-decoration: none;
+    color: black;
+    }
+
+
+
+
+.two{
+    width: 25%;
+    height: 100%;
+    /* background-color: #b822cc; */
+}
+
+.two h2{
+    font-size: 19px;
+}
+
+.two span{
+    font-size: 12px;
+
+}
+
+.two i{
+    font-size: 22px;
+}
+
+.three{
+    width: 25%;
+    height: 100%;
+    /* background-color: #135bad;     */
+    margin: 0 30px;
+}
+.three li{
+    list-style: none;
+    font-size: 13.6px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.904);
+}
+
+.four{
+width: 30%;
+height: 84%;
+background-color: rgba(255, 255, 255, 0.151);
+display: flex;
+justify-content: start;
+align-items: center;
+}
+
+.four h4{
+    position: relative;
+    top: -41%;
+    font-size: 13px;
+}
+
+
+.pay-one{
+    width: 15%;
+    height: 20%;
+    /* background-color: red; */
+    border-radius: 3px;
+    position: relative;
+    left: -90px;
+    top: -4%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.pay-two{
+    width: 15%;
+    height: 20%;
+    /* background-color: red; */
+    border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    left: -60px;
+    top: -4%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.pay-three{
+    width: 15%;
+    height: 20%;
+    /* background-color: red; */
+    border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    left: -25px;
+    top: -4%;
+    background-image: url(https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pay-four{
+    width: 15%;
+    height: 20%;
+    /* background-color: red; */
+    border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -4%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/1200px-Google_Pay_Logo.svg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
